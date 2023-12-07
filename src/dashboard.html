@@ -318,12 +318,12 @@
                     <div class="flex items-center">
                         <div>
                             <span
-                                class="leading-none font-medium text-[16px] text-gray-900 dark:text-white pb-1">Program PMW</span>
+                                class="leading-none font-medium text-[16px] text-gray-900 dark:text-white pb-1">Program
+                                PMW</span>
                         </div>
                     </div>
                     <div>
-                        <button id="FilterPMW" data-dropdown-toggle="pmwfilter"
-                            data-dropdown-placement="bottom"
+                        <button id="FilterPMW" data-dropdown-toggle="pmwfilter" data-dropdown-placement="bottom"
                             class="text-sm rounded-md border border-gray-200 px-2 py-1.5 font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 text-center inline-flex items-center dark:hover:text-white"
                             type="button">
 
@@ -362,9 +362,138 @@
                 </div>
                 <div class="py-6" id="chart-pmw"></div>
             </div>
-            
         </div>
-        
+    </div>
+    <div class="max-w-screen-2xl items-center mx-auto p-4 justify-between">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[25px]">
+            <div class="w-full bg-white rounded-lg dark:bg-gray-800 p-4 md:p-6">
+                <div class="flex justify-between pb-4 mb-4">
+                    <div class="flex items-center">
+                        <div>
+                            <span
+                                class="leading-none font-medium text-[16px] text-gray-900 dark:text-white pb-1">Beasiswa Tersedia</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button
+                            class="text-sm rounded-md border border-gray-200 px-2 py-1.5 font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 text-center inline-flex items-center dark:hover:text-white"
+                            type="button">
+                            <span class="">Details</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative overflow-auto md:overflow-hidden">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    No
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Nama Donatur
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Nama Beasiswa
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Periode Pendaftaran
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Kuota Pendaftaran
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Total Pendaftar
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    1
+                                </th>
+                                <td class="px-6 py-4">
+                                    Kemendagri Bandung
+                                </td>
+                                <td class="px-6 py-4">
+                                    Dana Cita
+                                </td>
+                                <td class="px-6 py-4">
+                                    12-12-23 sd 21-12-23
+                                </td>
+                                <td class="px-6 py-4">
+                                    240 Mahasiswa
+                                </td>
+                                <td class="px-6 py-4">
+                                    69 Mahasiswa
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    2
+                                </th>
+                                <td class="px-6 py-4">
+                                    Kemendagri Bandung
+                                </td>
+                                <td class="px-6 py-4">
+                                    Dana Cita
+                                </td>
+                                <td class="px-6 py-4">
+                                    12-12-23 sd 21-12-23
+                                </td>
+                                <td class="px-6 py-4">
+                                    240 Mahasiswa
+                                </td>
+                                <td class="px-6 py-4">
+                                    69 Mahasiswa
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    3
+                                </th>
+                                <td class="px-6 py-4">
+                                    Kemendagri Bandung
+                                </td>
+                                <td class="px-6 py-4">
+                                    Dana Cita
+                                </td>
+                                <td class="px-6 py-4">
+                                    12-12-23 sd 21-12-23
+                                </td>
+                                <td class="px-6 py-4">
+                                    240 Mahasiswa
+                                </td>
+                                <td class="px-6 py-4">
+                                    69 Mahasiswa
+                                </td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="w-full bg-white rounded-lg dark:bg-gray-800 p-4 md:p-6">
+                <div class="flex justify-between pb-4 mb-4 border-b border-[#D1D5DB]">
+                    <div class="flex items-center ">
+                        <div>
+                            <span
+                                class="leading-none font-medium text-[16px] text-gray-900 dark:text-white pb-1">Jadwal Konsultasi</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button
+                            class="text-sm rounded-md border border-gray-200 px-2 py-1.5 font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 text-center inline-flex items-center dark:hover:text-white"
+                            type="button">
+                            <span class="">Details</span>
+                        </button>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
@@ -401,7 +530,7 @@
                             { x: "Sun", y: 243 },
                         ],
                     },
-                                        {
+                    {
                         name: "Kunam",
                         color: "#988889",
                         data: [
@@ -500,7 +629,7 @@
         window.addEventListener("load", function () {
             const getChartOptions = () => {
                 return {
-                    series: [35.1, 23.5, 2.4, 5.4],
+                    series: [12, 10, 5, 30],
                     colors: ["#ECD906", "#12BAB5", "#34C759", "#BB62EA"],
                     chart: {
                         height: 320,
@@ -538,7 +667,7 @@
                                         fontFamily: "Inter, sans-serif",
                                         offsetY: -20,
                                         formatter: function (value) {
-                                            return value + "k"
+                                            return value + " UKM"
                                         },
                                     },
                                 },
@@ -562,14 +691,14 @@
                     yaxis: {
                         labels: {
                             formatter: function (value) {
-                                return value + "k"
+                                return value + " UKM"
                             },
                         },
                     },
                     xaxis: {
                         labels: {
                             formatter: function (value) {
-                                return value + "k"
+                                return value + " UKM"
                             },
                         },
                         axisTicks: {
@@ -642,18 +771,18 @@
                                         fontFamily: "Inter, sans-serif",
                                         offsetY: 20,
                                     },
-                                      total: {
+                                    total: {
                                         showAlways: true,
                                         show: true,
                                         label: "Jumlah Wirausaha",
                                         fontFamily: "Inter, sans-serif",
                                         formatter: function (w) {
-                                          const sum = w.globals.seriesTotals.reduce((a, b) => {
-                                            return a + b
-                                          }, 0)
-                                          return `${sum}`
+                                            const sum = w.globals.seriesTotals.reduce((a, b) => {
+                                                return a + b
+                                            }, 0)
+                                            return `${sum}`
                                         },
-                                      },
+                                    },
                                     value: {
                                         show: true,
                                         fontFamily: "Inter, sans-serif",
