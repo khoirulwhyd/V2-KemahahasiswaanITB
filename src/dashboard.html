@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav class="bg-primary-600 border-gray-200 dark:bg-gray-900">
+    <nav class="z-10 fixed top-0 w-full left-0 bg-primary-600 border-gray-200 dark:bg-gray-900">
         <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse bg-transparent">
                 <img src="/assets/LogoText.svg" class="" alt="Flowbite Logo" />
@@ -21,7 +21,7 @@
                     <img src="/assets/Notification.svg" alt="" srcset="">
                 </div>
                 <button type="button"
-                    class="flex text-sm  rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                    class="flex text-sm rounded-full md:me-0 focus:ring-4 focus:ring-gray-50 dark:focus:ring-gray-50"
                     id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
                     data-dropdown-placement="bottom">
                     <span class="sr-only">Open user menu</span>
@@ -73,10 +73,10 @@
                     </ul>
                 </div>
                 <button data-collapse-toggle="navbar-user" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-50 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                     aria-controls="navbar-user" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#fff"
                         viewBox="0 0 17 14">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M1 1h15M1 7h15M1 13h15" />
@@ -219,29 +219,23 @@
             </div>
         </div>
     </nav>
-    <div class="max-w-screen-2xl flex flex-wrap items-center mx-auto p-4 justify-between mt-[25px]">
-        <div class="">
-            <span class="block text-[20px] font-medium text-[#4B5563] dark:text-white">Selamat Datang Reynaldi
+    <div class="max-w-screen-2xl grid grid-cols-2 items-center mx-auto p-4 justify-between mt-[100px]">
+        <div class="max-w-screen-md">
+            <span class="text-[20px] font-medium text-[#4B5563] dark:text-white">Selamat Datang Reynaldi
                 Nugraha</span>
         </div>
-        <div>
-            <form class="ml-[60px]">
-                <label for="default-search"
-                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-                <div class="relative">
-                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                        </svg>
-                    </div>
-                    <input type="search" id="default-search"
-                        class="block p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="Search" required>
+        <form class="max-w-screen-2xl">   
+            <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+            <div class="relative">
+                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                    </svg>
                 </div>
-            </form>
-        </div>
+                <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required>
+            </div>
+        </form>
+
     </div>
     <div class="max-w-screen-2xl items-center mx-auto p-4 justify-between">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
@@ -366,8 +360,8 @@
         </div>
     </div>
     <div class="max-w-screen-2xl items-center mx-auto p-4 justify-between mb-10">
-        <div class="flex gap-[25px]">
-            <div class="max-w-screen-3xl bg-white rounded-lg dark:bg-gray-800 p-4 md:p-6">
+        <div class="flex-wrap md:flex gap-[25px]">
+            <div class="max-w-screen-3xl bg-white rounded-lg dark:bg-gray-800 p-4 md:p-6 mb-4 md:mb-0">
                 <div class="flex justify-between pb-4 mb-4">
                     <div class="flex items-center">
                         <div>
@@ -531,45 +525,57 @@
         // ApexCharts options and config
         window.addEventListener("load", function () {
             const options = {
-                colors: ["#1A56DB", "#FDBA8C"],
+                // colors: ["#1A56DB", "#FDBA8C"],
                 series: [
                     {
-                        name: "Organic",
-                        color: "#1A56DB",
+                        name: "Prestasi A",
+                        color: "#165BAA",
                         data: [
-                            { x: "Mon", y: 231 },
-                            { x: "Tue", y: 122 },
-                            { x: "Wed", y: 63 },
-                            { x: "Thu", y: 421 },
-                            { x: "Fri", y: 122 },
-                            { x: "Sat", y: 323 },
-                            { x: "Sun", y: 111 },
+                            { x: "Jan", y: 231 },
+                            { x: "Feb", y: 122 },
+                            { x: "Mar", y: 63 },
+                            { x: "Apr", y: 421 },
+                            { x: "Mei", y: 122 },
+                            { x: "Jun", y: 323 },
+                            { x: "Jul", y: 111 },
+                            { x: "Aug", y: 111 },
+                            { x: "Oct", y: 111 },
+                            { x: "Nov", y: 111 },
+                            { x: "Des", y: 111 },
                         ],
                     },
                     {
-                        name: "Social media",
-                        color: "#FDBA8C",
+                        name: "Prestasi B",
+                        color: "#A155B9",
                         data: [
-                            { x: "Mon", y: 232 },
-                            { x: "Tue", y: 113 },
-                            { x: "Wed", y: 341 },
-                            { x: "Thu", y: 224 },
-                            { x: "Fri", y: 522 },
-                            { x: "Sat", y: 411 },
-                            { x: "Sun", y: 243 },
+                            { x: "Jan", y: 231 },
+                            { x: "Feb", y: 122 },
+                            { x: "Mar", y: 63 },
+                            { x: "Apr", y: 421 },
+                            { x: "Mei", y: 122 },
+                            { x: "Jun", y: 323 },
+                            { x: "Jul", y: 111 },
+                            { x: "Aug", y: 111 },
+                            { x: "Oct", y: 111 },
+                            { x: "Nov", y: 111 },
+                            { x: "Des", y: 111 },
                         ],
                     },
                     {
-                        name: "Kunam",
-                        color: "#988889",
+                        name: "Prestasi C",
+                        color: "#F765A3",
                         data: [
-                            { x: "Mon", y: 232 },
-                            { x: "Tue", y: 113 },
-                            { x: "Wed", y: 341 },
-                            { x: "Thu", y: 224 },
-                            { x: "Fri", y: 522 },
-                            { x: "Sat", y: 411 },
-                            { x: "Sun", y: 243 },
+                            { x: "Jan", y: 231 },
+                            { x: "Feb", y: 122 },
+                            { x: "Mar", y: 63 },
+                            { x: "Apr", y: 421 },
+                            { x: "Mei", y: 122 },
+                            { x: "Jun", y: 323 },
+                            { x: "Jul", y: 111 },
+                            { x: "Aug", y: 111 },
+                            { x: "Oct", y: 111 },
+                            { x: "Nov", y: 111 },
+                            { x: "Des", y: 111 },
                         ],
                     },
                 ],
